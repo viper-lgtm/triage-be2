@@ -1,0 +1,26 @@
+# Ignoruj složku s buildem z tvého lokálního PC
+target/
+
+# Ignoruj lokální nastavení IDE
+.idea/
+*.iml
+.vscode/
+
+# Ignoruj logy
+*.log
+
+# Ignoruj Git soubory (v kontejneru nejsou potřeba)
+.git
+.gitignore
+
+# Ignoruj Docker soubory (kontejner nepotřebuje znát svůj vlastní recept)
+Dockerfile
+.dockerignore
+
+# Ignoruj systémové soubory
+.DS_Store
+Thumbs.db
+
+# Ignoruj dočasné soubory operačního systému a editorů
+*.swp
+*.bak
