@@ -1,6 +1,6 @@
 package cz.martinvedra.triagebe2.client
 
-import cz.martinvedra.triagebe2.api.csas.dto.ExchangeRateDto
+import cz.martinvedra.triagebe2.api.csasrates.dto.ExchangeRateDto
 import cz.martinvedra.triagebe2.config.properties.AppConfigurationProperties
 import io.github.resilience4j.ratelimiter.annotation.RateLimiter
 import org.slf4j.LoggerFactory

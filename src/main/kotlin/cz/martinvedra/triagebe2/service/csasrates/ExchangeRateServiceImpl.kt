@@ -1,6 +1,6 @@
-package cz.martinvedra.triagebe2.service.csas
+package cz.martinvedra.triagebe2.service.csasrates
 
-import cz.martinvedra.triagebe2.api.csas.dto.ExchangeRateDto
+import cz.martinvedra.triagebe2.api.csasrates.dto.ExchangeRateDto
 import cz.martinvedra.triagebe2.client.ExchangeRateClient
 import org.springframework.stereotype.Service
 

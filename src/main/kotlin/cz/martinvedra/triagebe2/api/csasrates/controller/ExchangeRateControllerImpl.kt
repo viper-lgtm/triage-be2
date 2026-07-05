@@ -1,7 +1,7 @@
-package cz.martinvedra.triagebe2.api.csas.controller
+package cz.martinvedra.triagebe2.api.csasrates.controller
 
-import cz.martinvedra.triagebe2.api.csas.dto.ExchangeRateDto
-import cz.martinvedra.triagebe2.service.csas.ExchangeRateService
+import cz.martinvedra.triagebe2.api.csasrates.dto.ExchangeRateDto
+import cz.martinvedra.triagebe2.service.csasrates.ExchangeRateService
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController

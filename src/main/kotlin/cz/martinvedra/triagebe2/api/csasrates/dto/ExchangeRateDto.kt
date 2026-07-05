@@ -1,4 +1,4 @@
-package cz.martinvedra.triagebe2.api.csas.dto
+package cz.martinvedra.triagebe2.api.csasrates.dto
 
 import java.math.BigDecimal
 import java.time.LocalDateTime
