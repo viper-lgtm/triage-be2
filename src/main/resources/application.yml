@@ -4,9 +4,23 @@ server:
 spring:
   application:
     name: triage-be2
+  kafka:
+    bootstrap-servers: localhost:9092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    consumer:
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      group-id: triage-be3-group
+  json:
+    trusted-packages: "*"
 
 app:
   enabled: true
+  kafka:
+    topic: exchange-rates
+    dlt-topic: exchange-rates-dlt
   csas:
     base-url: https://webapi.developers.erstegroup.com/api/csas/public/sandbox/v2/rates/exchangerates?web-api-key=c52a0682-4806-4903-828f-6cc66508329e
 
