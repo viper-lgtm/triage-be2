@@ -17,4 +17,10 @@ class ExchangeRateControllerImpl(
     override fun getExchangeRates(): List<ExchangeRateDto> {
         return exchangeRateService.getExchangeRates()
     }
+
+    @GetMapping("/publish")
+    fun publish(): String {
+        val count = exchangeRateService.publishRates()
+        return "published=$count"
+    }
 }

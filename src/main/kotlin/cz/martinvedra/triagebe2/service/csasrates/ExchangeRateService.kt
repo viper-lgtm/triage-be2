@@ -4,4 +4,5 @@ import cz.martinvedra.triagebe2.api.csasrates.dto.ExchangeRateDto
 
 interface ExchangeRateService {
     fun getExchangeRates(): List<ExchangeRateDto>
+    fun publishRates(): Int
 }
