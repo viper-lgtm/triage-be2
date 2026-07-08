@@ -12,15 +12,16 @@ class ExchangeRateServiceImpl(
 ) : ExchangeRateService {
 
     override fun getExchangeRates(): List<ExchangeRateDto> {
-        return restClient.getRates()
-    }
-
-    override fun publishRates(): Int {
-        val rates = getExchangeRates()
+        val rates = restClient.getRates()
         rates.forEach { rate ->
             val key = rate.shortName ?: "n/a"
             kafkaProducerService.sendRate(key, rate)
         }
+        return rates
+    }
+
+    override fun publishRates(): Int {
+        val rates = getExchangeRates()
         return rates.size
     }
 }
